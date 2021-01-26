@@ -9,24 +9,44 @@
     body{
         background-color:#EBEBEB;
     }
+
+    /* Estilos del header*/
     header{
         font-size: 12px;
         background-color: #EAC926;
-        height: 265px;
+        height: 20em;
     }
     
     div#nav-section{
-        padding: 25px;
+        
+        padding: 20px;
+    }
+
+    .log-search{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;        
     }
     
     img#logo{
-        display: inline-block;
-        left: 50px;
-        width: 50%;
-        height: auto;
-        padding-bottom: 10px;
+        width: 45%;
     }
-    
+
+    input#search{
+        height: 3em;
+        width: 50%;
+        border-radius: 5px;
+        border-style: none;
+        padding: 10px;
+    }
+
+    .fa-search{
+        position: absolute;
+        padding: 10px;
+        pointer-events: none;
+    }
+
     div#abajo{
         padding-left: 25px;
     }
@@ -40,15 +60,11 @@
         text-align: center;
     }
     
-    
+    /*Estilos del body*/
     p.titulares{
         font-size: 24px;
     }
 
-    p.description{
-        display: none;
-    }
-    
     a.link-menu{
         text-decoration:none;
         color: black;
@@ -121,11 +137,17 @@
     div.detalles-producto{
         border-top: solid #ebebeb 1px;
         padding: 15px;
-        display: flex;
+        display: block;
         position: relative;
     }
 
+    div.valores{
+        margin-bottom: 1em;
+        display: flex;
+    }
+
     p.precio{
+        font-size: 18px;
         flex-grow: 0.3;
     }
     
@@ -138,6 +160,7 @@
     }
     
     p.p-verdoso{
+        font-size: 16px;
         flex-grow: 0.7;
     }
 
@@ -180,10 +203,24 @@
         display: none;
     }
     
+    div.bloque-productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    div.producto{
+        flex-grow: unset;
+        width: 45%;
+    }
 }
 
 @media (min-width: 1280px){
     div.producto{
         box-shadow:  0px 0px 10px rgb(100, 100, 100);
+    }
+
+    div.bloque-productos{
+    flex-wrap: nowrap;
     }
 }
