@@ -11,10 +11,10 @@
     }
 
     /* Estilos del header*/
-    header{
+    .head{
         font-size: 12px;
         background-color: #EAC926;
-        height: 20em;
+        height: 18em;
     }
     
     div#nav-section{
@@ -41,10 +41,15 @@
         padding: 10px;
     }
 
-    .fa-search{
-        position: absolute;
-        padding: 10px;
-        pointer-events: none;
+    .button-search{
+        position: relative;
+        height: 2.5em;
+        width: 2.5em;
+        border: none;
+        border-radius: 5px;
+        left: 90%;
+        background: #FFF;
+        bottom: 2.8em;
     }
 
     div#abajo{
@@ -63,6 +68,9 @@
     /*Estilos del body*/
     p.titulares{
         font-size: 24px;
+        margin: .7em;
+        color: rgb(85, 85, 85);
+        font-style: bold;
     }
 
     a.link-menu{
@@ -179,7 +187,69 @@
     }
 }
 
+/* Estilos  en media queri para ajustar el button search*/
+@media (min-width: 440px){
+
+    .button-search{
+        bottom: 3.2em;
+    }
+}
+/* Estilos  en media queri para ajustar el button search*/
+@media (min-width: 520px){
+
+    .button-search{
+        bottom: 3.5em;
+    }
+}
+/* Estilos  en media queri para ajustar el button search*/
+@media (min-width: 620px){
+
+    .button-search{
+        bottom: 4em;
+    }
+}
+/* Estilos  en media queri para ajustar el button search*/
+@media (min-width: 707px){
+
+    input#search{
+        margin-left: 1em;
+    }
+    
+    .button-search{
+        bottom: 4.4em;
+    }
+}
+
+
+
+
+
 @media (min-width: 768px){
+
+    div.logo-search-abajo{
+        display: flex;
+        justify-content: space-between  ;
+    }
+
+    div.log-search{
+        width: 65vw;
+    }
+
+    input#search{
+        width: 45%;
+    }
+
+    .button-search{
+        bottom: 0em;
+        left: -4em;
+    }
+
+
+
+
+
+
+
     div.producto{
         box-shadow:  0px 0px 10px rgb(100, 100, 100);
         flex-grow: 0.5;
