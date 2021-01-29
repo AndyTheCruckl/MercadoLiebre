@@ -14,7 +14,7 @@
     .head{
         font-size: 12px;
         background-color: #EAC926;
-        height: 18em;
+        height: auto;
     }
     
     div#nav-section{
@@ -60,27 +60,25 @@
         display: none;
     }
     
+    li{
+        list-style: none;
+        display: flex;
+    }
+
     p#encabezado{
         display: inline-block;
         text-align: center;
     }
     
-    /*Estilos del body*/
-    p.titulares{
-        font-size: 24px;
-        margin: .7em;
-        color: rgb(85, 85, 85);
-        font-style: bold;
-    }
-
     a.link-menu{
         text-decoration:none;
         color: black;
         display:inline-block;
+        list-style:none;
     }
     
     div.burger-menu{
-        background-color: #03264C;
+        background-color: #0d4785;
         color: white;
         width: 50px;
         height: 50px;
@@ -93,29 +91,70 @@
         bottom: 10px;
     }
     
-    
     .fa-bars:before {
         content: "\f0c9";
         padding-top: 10px;
         font-size: 30px;
     }
-    
-    footer{
+
+    /*Estilos del Form Login*/
+
+    div.formulario{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+
+    }
+
+    form{
+        width: 80vw;
+        padding-left: 3em;
+        margin-bottom: 5em;
+    }
+
+    input.input-login{
+        height: 3em;
+        width: 90%;
+        border-radius: 5px;
+        border-style: none;
+        padding: 10px;
+        margin-top: 3em;
+    }
+
+    input.submit{
+        height: 2em;
+        width: 90%;
+        border-radius: 5px;
+        border-style: none;
+        padding: 10px;
+        margin-top: 3em;  
+        background-color: #0d4785;
+        color: white;
         text-align: center;
-        font-size: 12px;
     }
-    
-    i.azule{
-        color: #0d4785;
-        font-size: 2em;
+
+
+    /*Estilos del Form register*/
+    input.input-register{
+        height: 3em;
+        width: 90%;
+        border-radius: 5px;
+        border-style: none;
+        padding: 10px;
+        margin-top: 3em;
     }
-    
-    section.centrando{
-        padding: 25px;
-    }
-    
+
+
+    /*Estilos del body*/
     img.banner{
         width: 100%;  
+    }
+    
+    p.titulares{
+        font-size: 24px;
+        margin: .7em;
+        color: rgb(85, 85, 85);
+        font-style: bold;
     }
 
     main{
@@ -185,6 +224,24 @@
         right: 20px;
         top: -15px;
     }
+
+    /* Estilos del footer*/
+    footer{
+        text-align: center;
+        font-size: 12px;
+        background-color: white;
+    }
+    
+    i.azule{
+        color: #0d4785;
+        font-size: 2em;
+    }
+    
+    section.centrando{
+        display: flex;
+        flex-direction: row;
+        padding: 25px;
+    }
 }
 
 /* Estilos  en media queri para ajustar el button search*/
@@ -220,19 +277,23 @@
     }
 }
 
-
-
-
-
 @media (min-width: 768px){
+
+    .head{
+        height: 13em;
+    }
 
     div.logo-search-abajo{
         display: flex;
-        justify-content: space-between  ;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2em;
     }
 
     div.log-search{
-        width: 65vw;
+        width: 60vw;
+        display: flex;
+        align-items: center;
     }
 
     input#search{
@@ -244,9 +305,10 @@
         left: -4em;
     }
 
-
-
-
+    div#abajo{
+        padding: 0%;
+        margin-right: 3%;
+    }
 
 
 
@@ -255,9 +317,21 @@
         flex-grow: 0.5;
     }
     
-    nav{
-        display: inline-block;
+    nav, ul{
+        display: flex;
+        justify-content: space-between;
     }
+
+    ul.lado-izquierdo{
+        width: 30%;
+        margin-right: 3em;
+    }
+
+    ul.lado-derecho{
+        width: 30%;
+    }
+
+
     
     p.description{
         display: inline-block;
@@ -286,11 +360,50 @@
 }
 
 @media (min-width: 1280px){
+
+    .head{
+        height: auto;
+    }
+
+    div.log-search{
+        width: 68vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .button-search{
+        bottom: 0em;
+        left: -5em;
+    }
+
+    div#abajo{
+        padding: 0%;
+        margin-right: 10%;
+    }
+
+
+
+
     div.producto{
         box-shadow:  0px 0px 10px rgb(100, 100, 100);
     }
 
     div.bloque-productos{
     flex-wrap: nowrap;
+    }
+
+    
+
+    section.centrado{
+        display: flex;
+        justify-content: space-around;
+        width: auto;
+        flex-direction: row;
+    }
+
+
+    .elemto-foo{
+        width: 20vw;
+        margin-right: 0;
     }
 }

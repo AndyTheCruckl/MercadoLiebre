@@ -10,6 +10,14 @@ app.listen(3000, () => {
     console.log("Funcionando en el puerto 3000")
 });
 
-app.get("/", function(req, res){
-    res.sendFile(path.join(__dirname, "views/index.html")
-    )});
+app.get("/", function (req, res) {
+    res.sendFile(path.join(__dirname, "views/index.html"))
+});
+
+app.get("/register", function (req, res) {
+    res.sendFile(path.join(__dirname, "views/register.html"))
+});
+
+app.get("/login", function (req, res) {
+    res.sendFile(path.join(__dirname, "views/login.html"))
+});

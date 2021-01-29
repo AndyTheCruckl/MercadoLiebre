@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <title>Login</title>
+    </head>
+</head>
+
+<body>
+    <header class="head">
+        <div id="nav-section">
+            <div class="logo-search-abajo">
+                <div class="log-search">
+                    <img id="logo" src="/static/images/logo-mercado-liebre.svg" alt="aquí va el logo">
+                    <input id="search" type="search" placeholder="Buscar productos, marcas">
+                    <button class="button-search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div id="abajo">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <p id="encabezado">Comprá en cuotas y sin tarjeta de crédito</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="lado-izquierdo">
+                    <li><a class="link-menu" href="#">Ofertas</a></li>
+                    <li><a class="link-menu" href="#">Tiendas Oficiales</a></li>
+                    <li><a class="link-menu" href="#">Vender</a></li>
+                    <li><a class="link-menu" href="#">Ayuda</a></li>
+                </ul><br>
+                <ul class="lado-derecho">
+                    <li><a class="link-menu" href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a class="link-menu" href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a class="link-menu" href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <i class="fa fa-bars burger"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="formulario">
+        <form action="/" method="GET">
+            <input class="input-login" type="text" name="user" id="user" placeholder="Nombre de usuario">
+            <input class="input-login" type="password" name="pass" id="pass" placeholder="Elegi tu contraseña">
+            <input class="submit"  type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <footer>
+        <section class="centrando">
+            <div class="elemto-foo">
+                <i class="fas fa-credit-card azule"></i>
+                <p class="titulares">Pagá con tarjeta o en efectivo</p>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
+                    siempre es
+                    seguro! </p>
+            </div>
+
+            <div class="elemto-foo">
+                <i class="fas fa-gift azule"></i>
+                <p class="titulares">Envío gratis desde $ 2.500</p>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
+            <div class="elemto-foo">
+                <i class="fas fa-user-shield azule"></i>
+                <p class="titulares">Seguridad, de principio a fin</p>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
+                    protegid@.
+                </p>
+            </div>
+        </section>
+        <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+
+    </footer>
+</body>
+
+</html>
