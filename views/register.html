@@ -52,11 +52,11 @@
     <div class="formulario">
         <form action="" method="post">
             <input class="input-register" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
-            <input class="input-register" type="text" name="usuario" id="usuario" placeholder="Nombre del usuario">
-            <input class="input-register" type="email" name="correo" id="correo" placeholder="E-mail"><br>
+            <input class="input-register" type="text" name="usuario" id="usuario" placeholder="Nombre del usuario" minlength="10"  required>
+            <input class="input-register" type="email" name="correo" id="correo" placeholder="E-mail" required><br>
             <label for="">Fecha de nacimiento</label>
-            <input class="input-register" type="date" name="fecha" id="fecha">
-            <input class="input-register" type="text" name="adress" id="adress" placeholder="Domicilio"><br>
+            <input class="input-register" type="date" name="fecha" id="fecha" required>
+            <input class="input-register" type="text" name="adress" id="adress" placeholder="Domicilio" required><br>
             <label for="">Perfil del usuario</label><br>
             <label for="Comprador">Comprador</label>
             <input type="radio" name="Comprador" id="Comprador">
@@ -68,11 +68,13 @@
             <input type="checkbox" name="Hogar" id="Hogar"><label for="">Hogar</label>
             <input type="checkbox" name="Juguetería" id="Juguetería"><label for="">Juguetería </label>
             <input type="checkbox" name="Vida" id="Vida"><label for="">Vida Sana</label>
-            <input type="image" src="" alt="">
-            <input class="input-register" type="password" name="" id="" placeholder="Contraseña">
-            <input class="input-register" type="password" name="" id="" placeholder="Confirma contraseña">
+            <input type="file" name="avatar" accept="image/*" multiple>
+            <input class="input-register" type="password" name="" id="" placeholder="Contraseña" minlength="7" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+            ]" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
+            <input class="input-register" type="password" name="" id="" placeholder="Confirma contraseña" minlength="7" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+            ]" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
             <input class="submit" type="submit" value="Enviar"><br>
-            <input type="button" value="Borrar">
+            <input type="reset" value="Borrar">
         </form>
     </div>
 

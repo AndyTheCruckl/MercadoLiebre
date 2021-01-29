@@ -403,7 +403,7 @@
 
 
     .elemto-foo{
-        width: 20vw;
+        width: auto;
         margin-right: 0;
     }
 }
