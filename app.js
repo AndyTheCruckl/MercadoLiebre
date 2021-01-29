@@ -6,7 +6,7 @@ app.use('/static', express.static(__dirname + '/public'));
 
 const publicPath = path.resolve(__dirname, "./mercado-liebre");
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Funcionando en el puerto 3000")
 });
 
